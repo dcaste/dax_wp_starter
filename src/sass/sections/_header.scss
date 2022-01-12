@@ -1,0 +1,148 @@
+#header-desktop {
+	z-index: 99;
+}
+
+/** TOP BAR **/
+#top-bar {
+	padding: 5px 0px;
+	background: $blue;
+	@include fonts-headings;
+	color: $blue-light;
+	text-transform: uppercase;
+	font-size: 12px;
+
+	a {
+		color: $blue-light;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	@include mobile {
+		display: none;
+		&.oculto {
+			display: none;
+		}
+		&.visible {
+			display: none;
+		}
+	}
+
+	@include laptop-m {
+		&.oculto {
+			display: none;
+		}
+		&.visible {
+			display: block;
+		}
+	}
+}
+
+#top-bar__container {
+	@include alignwide;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-bar__icon {
+	margin-right: 5px;
+}
+.top-bar__item + .top-bar__item {
+	margin-left: 1rem;
+}
+
+/** NAV DESKTOP **/
+#nav-desktop {
+	background: $blue-light;
+	transition: padding $transition;
+	z-index: 99;
+
+	.alignwide {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.col-right {
+		float: right;
+		display: flex;
+		align-items: center;
+
+		> * + * {
+			margin-left: 1rem;
+		}
+	}
+
+	.dropdown.menu > li > a {
+		background: transparent;
+	}
+
+	@include mobile {
+		display: none;
+	}
+
+	@include tablet-h {
+		display: block;
+
+		&.small {
+			padding: 10px 0px;
+			.logo-header {
+				height: 30px;
+			}
+		}
+
+		&.regular {
+			padding: 20px 0px;
+			.logo-header {
+				height: 43px;
+			}
+		}
+	}
+}
+
+.logo-header {
+	transition: height $transition;
+	&:focus {
+		outline: none;
+	}
+}
+
+.header-nav {
+	a {
+		color: $blue-light;
+		text-transform: uppercase;
+		@include fonts-headings;
+		font-weight: $regular;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0px;
+		padding-inline-start: 0px;
+	}
+
+	li {
+		float: left;
+	}
+
+	@include tablet-h {
+		a {
+			padding: 0.25rem 0.75rem;
+		}
+	}
+}
+
+.header-social {
+	font-size: 1.3em;
+	color: $blue-light;
+
+	&:hover {
+		color: $green;
+	}
+}

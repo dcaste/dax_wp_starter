@@ -1,0 +1,16 @@
+// Posts and Pages styles.
+#main {
+	z-index: 1;
+	background: $white;
+}
+
+.error404 {
+	#main {
+		color: $white;
+		padding: 6rem 0px;
+
+		h1 {
+			color: $white;
+		}
+	}
+}

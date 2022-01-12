@@ -1,0 +1,194 @@
+/* Estilos básicos */
+body {
+	@include fonts-body;
+	font-size: 16px;
+	color: $grey-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include fonts-headings;
+	text-transform: uppercase;
+	margin: 0px;
+	font-weight: $bold;
+	color: $black;
+	line-height: 1.2em;
+	& + p {
+		margin-top: 0.5em;
+	}
+}
+
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+h3 {
+	font-size: 1.6rem;
+}
+h4 {
+	font-size: 1.5rem;
+}
+h5 {
+	font-size: 1.3rem;
+}
+h6 {
+	font-size: 1.2rem;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+select,
+textarea {
+	background-color: $grey-light;
+	color: $grey-dark;
+	border: none;
+	cursor: text;
+	padding: 0.75rem 1rem;
+	line-height: 1em;
+	border-radius: $global-radius;
+	width: 100%;
+	box-sizing: border-box;
+	@include fonts-body;
+	font-size: 0.9em;
+
+	&:focus {
+		outline: 0px;
+	}
+
+	&::placeholder {
+		color: $grey;
+		font-size: 0.9em;
+	}
+}
+
+select {
+	cursor: pointer;
+}
+
+strong {
+	font-weight: $bold;
+}
+
+a {
+	text-decoration: none;
+	transition: $transition;
+	color: $blue;
+
+	&:hover {
+		color: $green;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+	margin: 0px;
+	line-height: 1.5em;
+}
+
+p + p {
+	margin-top: 1em;
+}
+
+/* Buttons *******************************/
+.button,
+[type="reset"],
+[type="submit"] {
+	margin: 0px;
+	overflow: hidden !important;
+	border: none;
+	border-radius: $global-radius;
+	padding: 0.75rem 1.5rem !important;
+	font-size: 0.9em !important;
+	font-weight: $regular !important;
+	cursor: pointer;
+	line-height: 1;
+	min-width: 100px;
+	box-sizing: border-box;
+	text-align: center;
+
+	&:focus {
+		outline: 0px;
+	}
+
+	&:disabled {
+		opacity: 0.5;
+	}
+}
+
+.button-white {
+	@extend .button;
+	color: $grey-dark !important;
+	background: $white !important;
+
+	&:hover {
+		background: $grey !important;
+	}
+}
+
+.button-blue {
+	@extend .button;
+	color: $white;
+	background: $blue !important;
+
+	&:hover {
+		color: $white;
+		background: lighten($blue, 10) !important;
+	}
+}
+
+.button-green {
+	@extend .button;
+	color: $white !important;
+	background: $green !important;
+
+	&:hover {
+		background: $white !important;
+	}
+}
+
+.alignwide {
+	margin: auto;
+	@include mobile {
+		max-width: 95%;
+	}
+	@include laptop-h {
+		max-width: 1400px;
+	}
+}
+
+#go-to-top {
+	display: none;
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	z-index: 999999;
+	outline: none;
+	padding: 0.75rem 0.6rem !important;
+	font-size: 0.8rem;
+	border-radius: 50%;
+	margin: 0px;
+	min-width: inherit;
+	color: $blue !important;
+}
