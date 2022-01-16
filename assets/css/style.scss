@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// Theme info.
+@import "./settings/theme_info";
+
 // Variables and mixins.
 @import "./settings/variables";
 @import "./settings/mixins";
@@ -7,7 +10,7 @@
 // Animations.
 
 // Global styles.
-@import "./settings/sanitize"; // CSS reset to normalize the basic styles.
+@import "./settings/sanitize"; // CSS reset.
 @import "./settings/global";
 @import "./settings/wordpress";
 

@@ -1,6 +1,6 @@
 #nav-mobile {
 	padding: 0.5rem 0;
-	background: $blue-dark;
+	background: $blue;
 	z-index: 99;
 
 	@include mobile {
@@ -12,7 +12,7 @@
 }
 
 .mobile-container {
-	background: $blue-dark;
+	background: $blue;
 	z-index: 99;
 	top: 0px;
 	padding: 1rem 0px;
@@ -44,7 +44,7 @@
 }
 
 #mobile-menu {
-	background: $blue-dark !important;
+	background: $blue !important;
 	font-size: 1em;
 	flex-direction: column;
 	justify-content: center;
