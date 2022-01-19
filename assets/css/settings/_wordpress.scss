@@ -1,4 +1,4 @@
-/* ESTILOS DE WORDPRESS */
+/* Basic WordPress styles */
 .pos-fixed {
 	position: fixed !important;
 	top: 1em;
@@ -65,12 +65,12 @@
 
 // Login page styles.
 .login {
-	background: $blue;
+	background: $main_color;
 
 	#login {
 		h1 {
 			a {
-				background-image: url("../img/logo-login.png");
+				background-image: url("../img/login.png");
 				background-size: 305px 43px;
 				width: 305px;
 				height: 43px;
@@ -81,12 +81,16 @@
 	#nav,
 	#backtoblog {
 		a {
-			color: $green;
+			color: $secondary_color;
 		}
 	}
 
 	#wp-submit {
 		height: 3rem !important;
+	}
+
+	label {
+		font-size: inherit;
 	}
 }
 

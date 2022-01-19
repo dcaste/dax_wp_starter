@@ -1,10 +1,11 @@
-/* Estilos básicos */
+/* Global styles */
 body {
 	@include fonts-body;
 	font-size: 16px;
 	color: $grey-dark;
 }
 
+/* Headings */
 h1,
 h2,
 h3,
@@ -41,6 +42,7 @@ h6 {
 	font-size: 1.2rem;
 }
 
+/* Forms */
 [type="text"],
 [type="password"],
 [type="date"],
@@ -58,8 +60,8 @@ h6 {
 select,
 textarea {
 	background-color: $grey-light;
-	color: $grey-dark;
-	border: none;
+	color: $black;
+	border: 1px solid $grey-dark;
 	cursor: text;
 	padding: 0.75rem 1rem;
 	line-height: 1em;
@@ -79,6 +81,11 @@ textarea {
 	}
 }
 
+label {
+	color: $grey-dark;
+	font-weight: $bold;
+}
+
 select {
 	cursor: pointer;
 }
@@ -90,10 +97,10 @@ strong {
 a {
 	text-decoration: none;
 	transition: $transition;
-	color: $blue;
+	color: $main_color;
 
 	&:hover {
-		color: $green;
+		color: $secondary_color;
 	}
 }
 
@@ -111,7 +118,7 @@ p + p {
 	margin-top: 1em;
 }
 
-/* Buttons *******************************/
+/* Buttons */
 .button,
 [type="reset"],
 [type="submit"] {
@@ -147,24 +154,25 @@ p + p {
 	}
 }
 
-.button-blue {
+.button-main {
 	@extend .button;
 	color: $white;
-	background: $blue !important;
+	background: $main_color !important;
 
 	&:hover {
 		color: $white;
-		background: lighten($blue, 10) !important;
+		background: lighten($main_color, 10) !important;
 	}
 }
 
-.button-green {
+.button-secondary {
 	@extend .button;
 	color: $white !important;
-	background: $green !important;
+	background: $secondary_color !important;
 
 	&:hover {
-		background: $white !important;
+		color: $white;
+		background: lighten($secondary_color, 10) !important;
 	}
 }
 
@@ -190,5 +198,5 @@ p + p {
 	border-radius: 50%;
 	margin: 0px;
 	min-width: inherit;
-	color: $blue !important;
+	color: $main_color !important;
 }

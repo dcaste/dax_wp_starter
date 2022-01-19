@@ -1,11 +1,11 @@
 #footer {
 	z-index: 99;
-	background: $blue;
-	color: $blue-light;
+	background: $main_color;
+	color: $main_color-light;
 	padding: 2rem 0;
 
 	a {
-		color: $blue-light;
+		color: $main_color-light;
 
 		&:hover {
 			color: $white;

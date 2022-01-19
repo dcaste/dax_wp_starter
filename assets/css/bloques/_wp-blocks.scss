@@ -3,7 +3,7 @@
 .wp-block-media-text__media {
 	padding: 1rem;
 	img {
-		box-shadow: $blue 10px 10px 0;
+		box-shadow: $main_color 10px 10px 0;
 	}
 
 	@include mobile {
@@ -23,7 +23,7 @@
 }
 
 .wp-block-embed-youtube {
-	background: $blue-light;
+	background: $main_color-light;
 	padding: 3rem 0;
 	margin: 0;
 }
