@@ -43,6 +43,10 @@ h6 {
 }
 
 /* Forms */
+form {
+	width: 100%;
+}
+
 [type="text"],
 [type="password"],
 [type="date"],
@@ -174,6 +178,10 @@ p + p {
 		color: $white;
 		background: lighten($secondary_color, 10) !important;
 	}
+}
+
+.wp-core-ui .button-primary {
+	@extend .button-main;
 }
 
 .alignwide {
