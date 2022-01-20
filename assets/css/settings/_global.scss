@@ -1,8 +1,8 @@
 /* Global styles */
 body {
-	@include fonts-body;
+	@include fonts--body;
 	font-size: 16px;
-	color: $grey-dark;
+	color: $color--grey-dark;
 }
 
 /* Headings */
@@ -12,11 +12,11 @@ h3,
 h4,
 h5,
 h6 {
-	@include fonts-headings;
+	@include fonts--headings;
 	text-transform: uppercase;
 	margin: 0px;
-	font-weight: $bold;
-	color: $black;
+	font-weight: $fonts--bold;
+	color: $color--black;
 	line-height: 1.2em;
 	& + p {
 		margin-top: 0.5em;
@@ -63,16 +63,16 @@ form {
 [type="color"],
 select,
 textarea {
-	background-color: $grey-light;
-	color: $black;
-	border: 1px solid $grey-dark;
+	background-color: $color--grey-light;
+	color: $color--black;
+	border: 1px solid $color--grey-dark;
 	cursor: text;
 	padding: 0.75rem 1rem;
 	line-height: 1em;
-	border-radius: $global-radius;
+	border-radius: $global--radius;
 	width: 100%;
 	box-sizing: border-box;
-	@include fonts-body;
+	@include fonts--body;
 	font-size: 0.9em;
 
 	&:focus {
@@ -80,14 +80,14 @@ textarea {
 	}
 
 	&::placeholder {
-		color: $grey;
+		color: $color--grey;
 		font-size: 0.9em;
 	}
 }
 
 label {
-	color: $grey-dark;
-	font-weight: $bold;
+	color: $color--grey-dark;
+	font-weight: $fonts--bold;
 }
 
 select {
@@ -95,16 +95,16 @@ select {
 }
 
 strong {
-	font-weight: $bold;
+	font-weight: $fonts--bold;
 }
 
 a {
 	text-decoration: none;
 	transition: $transition;
-	color: $main_color;
+	color: $color--main;
 
 	&:hover {
-		color: $secondary_color;
+		color: $color--secondary;
 	}
 }
 
@@ -129,10 +129,10 @@ p + p {
 	margin: 0px;
 	overflow: hidden !important;
 	border: none;
-	border-radius: $global-radius;
+	border-radius: $global--radius;
 	padding: 0.75rem 1.5rem !important;
 	font-size: 0.9em !important;
-	font-weight: $regular !important;
+	font-weight: $fonts--regular !important;
 	cursor: pointer;
 	line-height: 1;
 	min-width: 100px;
@@ -150,33 +150,33 @@ p + p {
 
 .button-white {
 	@extend .button;
-	color: $grey-dark !important;
-	background: $white !important;
+	color: $color--grey-dark !important;
+	background: $color--white !important;
 
 	&:hover {
-		background: $grey !important;
+		background: $color--grey !important;
 	}
 }
 
 .button-main {
 	@extend .button;
-	color: $white;
-	background: $main_color !important;
+	color: $color--white;
+	background: $color--main !important;
 
 	&:hover {
-		color: $white;
-		background: lighten($main_color, 10) !important;
+		color: $color--white;
+		background: lighten($color--main, 10) !important;
 	}
 }
 
 .button-secondary {
 	@extend .button;
-	color: $white !important;
-	background: $secondary_color !important;
+	color: $color--white !important;
+	background: $color--secondary !important;
 
 	&:hover {
-		color: $white;
-		background: lighten($secondary_color, 10) !important;
+		color: $color--white;
+		background: lighten($color--secondary, 10) !important;
 	}
 }
 
@@ -206,5 +206,5 @@ p + p {
 	border-radius: 50%;
 	margin: 0px;
 	min-width: inherit;
-	color: $main_color !important;
+	color: $color--main !important;
 }

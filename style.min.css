@@ -119,7 +119,7 @@ img.alignleft{float:left;margin:0 1.5rem 1.5rem 0}
 img.alignright{float:right;margin:0 0 1.5rem 1.5rem}
 img.aligncenter{float:none;margin:1.5rem auto;display:block}
 #header-desktop{z-index:99}
-#top-bar{padding:5px 0;background:#06c;font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;color:#e9f4ff;text-transform:uppercase;font-size:12px}
+#top-bar{padding:5px 0;background:#06c;font-family:"Roboto",Helvetica,Arial,sans-serif;color:#e9f4ff;text-transform:uppercase;font-size:.85em}
 #top-bar a{color:#e9f4ff}
 #top-bar a:hover{color:#099}
 #top-bar__container{margin:auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
@@ -184,9 +184,6 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 @font-face{font-family:"Roboto Condensed";font-style:normal;font-weight:700;src:url("./assets/fonts/roboto-condensed-v19-latin-700.eot");src:local(""),url("./assets/fonts/roboto-condensed-v19-latin-700.eot?#iefix") format("embedded-opentype"),url("./assets/fonts/roboto-condensed-v19-latin-700.woff2") format("woff2"),url("./assets/fonts/roboto-condensed-v19-latin-700.woff") format("woff"),url("./assets/fonts/roboto-condensed-v19-latin-700.ttf") format("truetype"),url("./assets/fonts/roboto-condensed-v19-latin-700.svg#RobotoCondensed") format("svg")}
 @media only screen and (min-width:320px){.alignwide{max-width:95%}
 .login{width:90%}
-#top-bar{display:none}
-#top-bar.oculto{display:none}
-#top-bar.visible{display:none}
 #top-bar__container{max-width:95%}
 #nav-desktop{display:none}
 #footer-nav li+li{margin-left:.5rem;font-size:.9em}
@@ -209,8 +206,6 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 #nav-mobile{display:none}
 #mobile-menu{display:none}
 .wp-block-media-text{grid-template-columns:1fr 1fr;grid-template-areas:"media-text-media media-text-content"}
-}@media only screen and (min-width:1280px){#top-bar.oculto{display:none}
-#top-bar.visible{display:block}
 }@media only screen and (min-width:1440px){.alignwide{max-width:1400px}
 #top-bar__container{max-width:1400px}
 .wp-block-embed__wrapper{max-width:1400px}

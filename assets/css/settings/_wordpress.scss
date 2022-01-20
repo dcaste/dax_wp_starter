@@ -55,7 +55,7 @@
 
 // Login page styles.
 .login {
-	background: $main_color;
+	background: $color--main;
 	margin: auto;
 
 	@include mobile {
@@ -69,9 +69,9 @@
 	form {
 		margin: 0;
 		padding: 1rem;
-		background-color: $white;
+		background-color: $color--white;
 		border: none;
-		border-radius: $global-radius;
+		border-radius: $global--radius;
 
 		.input {
 			padding: 0.5rem 1rem;
@@ -86,7 +86,7 @@
 
 	.wp-hide-pw {
 		background: transparent !important;
-		color: $grey-dark !important;
+		color: $color--grey-dark !important;
 		border: none !important;
 		&:focus {
 			border: none !important;
@@ -99,9 +99,9 @@
 		font-size: 1rem;
 		padding: 0;
 		a {
-			color: $white;
+			color: $color--white;
 			&:hover {
-				color: $white;
+				color: $color--white;
 			}
 		}
 	}

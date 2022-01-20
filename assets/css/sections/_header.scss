@@ -5,36 +5,17 @@
 /** TOP BAR **/
 #top-bar {
 	padding: 5px 0px;
-	background: $main_color;
-	@include fonts-headings;
-	color: $main_color-light;
+	background: $color--main;
+	@include fonts--body;
+	color: $color--main-light;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 0.85em;
 
 	a {
-		color: $main_color-light;
+		color: $color--main-light;
 
 		&:hover {
-			color: $secondary_color;
-		}
-	}
-
-	@include mobile {
-		display: none;
-		&.oculto {
-			display: none;
-		}
-		&.visible {
-			display: none;
-		}
-	}
-
-	@include laptop-m {
-		&.oculto {
-			display: none;
-		}
-		&.visible {
-			display: block;
+			color: $color--secondary;
 		}
 	}
 }
@@ -55,7 +36,7 @@
 
 /** NAV DESKTOP **/
 #nav-desktop {
-	background: $main_color-light;
+	background: $color--main-light;
 	transition: padding $transition;
 	z-index: 99;
 
@@ -111,13 +92,13 @@
 
 .header-nav {
 	a {
-		color: $main_color-light;
+		color: $color--main-light;
 		text-transform: uppercase;
-		@include fonts-headings;
-		font-weight: $regular;
+		@include fonts--headings;
+		font-weight: $fonts--regular;
 
 		&:hover {
-			color: $white;
+			color: $color--white;
 		}
 	}
 
@@ -140,9 +121,9 @@
 
 .header-social {
 	font-size: 1.3em;
-	color: $main_color-light;
+	color: $color--main-light;
 
 	&:hover {
-		color: $secondary_color;
+		color: $color--secondary;
 	}
 }

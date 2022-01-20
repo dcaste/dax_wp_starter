@@ -1,14 +1,14 @@
 #footer {
 	z-index: 99;
-	background: $main_color;
-	color: $main_color-light;
+	background: $color--main;
+	color: $color--main-light;
 	padding: 2rem 0;
 
 	a {
-		color: $main_color-light;
+		color: $color--main-light;
 
 		&:hover {
-			color: $white;
+			color: $color--white;
 		}
 	}
 }
