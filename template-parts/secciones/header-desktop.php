@@ -14,14 +14,14 @@
 
 			<h1>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-					<img class="logo-header" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo-dcaste_wp_starter.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+					<img class="logo-header" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 				</a>
 			</h1>
 
 		<?php else : ?>
 
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-				<img class="logo-header" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo-dcaste_wp_starter.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
+				<img class="logo-header" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
 			</a>
 
 		<?php endif; // Ends if is homepage. ?>
