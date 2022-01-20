@@ -3,16 +3,15 @@
 }
 
 /** TOP BAR **/
-#top-bar {
+#header__top-bar {
 	padding: 5px 0px;
-	background: $color--main;
+	background: $color--main-light;
 	@include fonts--body;
-	color: $color--main-light;
-	text-transform: uppercase;
+	color: $color--grey;
 	font-size: 0.85em;
 
 	a {
-		color: $color--main-light;
+		color: $color--main;
 
 		&:hover {
 			color: $color--secondary;
@@ -20,31 +19,22 @@
 	}
 }
 
-#top-bar__container {
+#header__top-bar__container {
 	@include alignwide;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.top-bar__icon {
+.header__top-bar__icon {
 	margin-right: 5px;
-}
-.top-bar__item + .top-bar__item {
-	margin-left: 1rem;
 }
 
 /** NAV DESKTOP **/
-#nav-desktop {
-	background: $color--main-light;
+#header__nav {
+	background: $color--main;
 	transition: padding $transition;
 	z-index: 99;
-
-	.alignwide {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
 
 	.col-right {
 		float: right;
@@ -83,6 +73,13 @@
 	}
 }
 
+.header__nav__container {
+	@include alignwide;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
 .logo-header {
 	transition: height $transition;
 	&:focus {
@@ -90,7 +87,7 @@
 	}
 }
 
-.header-nav {
+.header__nav {
 	a {
 		color: $color--main-light;
 		text-transform: uppercase;

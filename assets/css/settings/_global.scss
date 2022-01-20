@@ -3,6 +3,7 @@ body {
 	@include fonts--body;
 	font-size: 16px;
 	color: $color--grey-dark;
+	background-color: $color--white;
 }
 
 /* Headings */
@@ -182,16 +183,6 @@ p + p {
 
 .wp-core-ui .button-primary {
 	@extend .button-main;
-}
-
-.alignwide {
-	margin: auto;
-	@include mobile {
-		max-width: 95%;
-	}
-	@include laptop-h {
-		max-width: 1400px;
-	}
 }
 
 #go-to-top {
