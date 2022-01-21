@@ -7,7 +7,7 @@
 
 ?>
 
-<nav class="header__nav">
+<nav id="header__nav">
 	<?php
 	// Prints Main menu.
 	$menu_defaults = array(

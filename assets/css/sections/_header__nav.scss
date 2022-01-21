@@ -1,0 +1,96 @@
+/** NAV DESKTOP **/
+#header__nav__wrapper {
+	z-index: 99;
+	padding: 20px 0px;
+	background: $color--main;
+	transition: padding $transition;
+
+	@include mobile {
+		display: none;
+	}
+
+	@include tablet-h {
+		display: block;
+
+		&.small {
+			padding: 10px 0px;
+			.logo-header {
+				height: 30px;
+			}
+		}
+
+		&.regular {
+			padding: 20px 0px;
+			.logo-header {
+				height: 43px;
+			}
+		}
+	}
+}
+
+#header__nav__container {
+	@include alignwide;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#header__logo {
+	transition: height $transition;
+
+	&:focus {
+		outline: none;
+	}
+
+	&.small {
+		height: 50px;
+	}
+
+	&.regular {
+		height: 70px;
+	}
+}
+
+#header__nav {
+	a {
+		display: block;
+		color: $color--main-light;
+		text-transform: uppercase;
+		@include fonts--headings;
+		font-weight: $fonts--regular;
+		padding: 0.5rem 1rem;
+
+		&:hover {
+			color: $color--grey-dark;
+			background-color: $color--main-light;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0px;
+		padding-inline-start: 0px;
+	}
+
+	li {
+		float: left;
+	}
+	.sub-menu {
+		display: none;
+	}
+}
+
+.header-social {
+	font-size: 1.3em;
+	color: $color--main-light;
+
+	&:hover {
+		color: $color--secondary;
+	}
+}
+
+.current-menu-item,
+.current-menu-parent,
+.current-menu-ancestor {
+	background-color: $color--main-dark;
+}

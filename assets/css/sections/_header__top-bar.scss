@@ -1,0 +1,27 @@
+/** TOP BAR **/
+#header__top-bar {
+	padding: 5px 0px;
+	background: $color--main-light;
+	@include fonts--body;
+	color: $color--grey-dark;
+	font-size: 0.85em;
+
+	a {
+		color: $color--main;
+
+		&:hover {
+			color: $color--secondary;
+		}
+	}
+}
+
+#header__top-bar__container {
+	@include alignwide;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__top-bar__icon {
+	margin-right: 5px;
+}
