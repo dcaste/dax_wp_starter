@@ -9,8 +9,15 @@
 
 <header id="header__top-bar">
 	<div id="header__top-bar__container">
-		<div class="header__top-bar__item">Top bar content goes here</div>
-		<div class="header__top-bar__item">Top bar content goes here</div>
-		<div class="header__top-bar__item"><a href=#>Link example</a></div>
+		<a href="mailto:my@email.com">
+			<div class="header__top-bar__item"><i class="icon-mail-alt"></i> my@email.com</div>
+		</a>
+		<a href="tel:+01 1800-123-123">
+			<div class="header__top-bar__item"><i class="icon-phone"></i> 1800-123-123</div>
+		</a>
+		<div class="header__top-bar__item"><i class="icon-location"></i> Address example</div>
+		<div class="header__top-bar__item">
+			<?php get_template_part( 'template-parts/social-media' ) ?>
+		</div>
 	</div>
 </header>

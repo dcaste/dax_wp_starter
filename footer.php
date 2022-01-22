@@ -7,26 +7,23 @@
 
 ?>
 		<footer id="footer">
+			<div id="footer__container">
 
-			<div id="footer-info" class="alignwide">
+				<?php	get_template_part( 'template-parts/footer__logo' ); ?>
+				<?php	get_template_part( 'template-parts/footer__nav' ); ?>
 
-				<div id="footer-logo">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>" loading="lazy">
-					</a>
+				<div id="footer__copyright">
+					&copy <?php echo esc_html( date( 'Y' ) ); ?> dcaste_wp_starter.
 				</div>
 
-			<div id="footer-copyright" class="alignwide">
-				&copy <?php echo esc_html( date( 'Y' ) ); ?> dcaste_wp_starter. Todos los derechos reservados.
 			</div>
-
 		</footer>
 
 		<a href="#" id="go__top" title="Go to top">
 			<i class="icon-up-open"></i>
 		</a>
 
-		<?php	get_template_part( 'template-parts/secciones/header-mobile' ); ?>
+		<?php	get_template_part( 'template-parts/nav__mobile' ); ?>
 
 		<?php wp_footer(); ?>
 

@@ -13,15 +13,21 @@
 			color: $color--secondary;
 		}
 	}
+
+	.social-media__item {
+		display: inline-block;
+		font-size: 1.9em;
+	}
+
+	.social-media__item + .social-media__item {
+		margin-left: 0.2em;
+	}
 }
 
 #header__top-bar__container {
-	@include alignwide;
+	@include align-wide;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-}
-
-.header__top-bar__icon {
-	margin-right: 5px;
+	gap: 5rem;
 }

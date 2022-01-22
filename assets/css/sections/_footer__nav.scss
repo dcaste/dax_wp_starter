@@ -1,0 +1,36 @@
+/* Footer Navigation menu */
+
+#footer__nav {
+	margin: 1rem auto;
+
+	ul {
+		display: inline-block;
+		list-style: none;
+		margin-block-start: 0px;
+		margin-block-end: 0px;
+		padding-inline-start: 0px;
+	}
+
+	li {
+		float: left;
+	}
+
+	@include mobile {
+		li + li {
+			margin-left: 0.5rem;
+			font-size: 0.9em;
+		}
+	}
+
+	@include tablet-h {
+		li + li {
+			margin-left: 1rem;
+			font-size: 1em;
+		}
+	}
+
+	a {
+		padding: 0.5rem 0.2rem;
+		text-transform: uppercase;
+	}
+}

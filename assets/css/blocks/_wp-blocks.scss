@@ -29,7 +29,7 @@
 }
 
 .wp-block-embed__wrapper {
-	@include alignwide;
+	@include align-wide;
 	@include mobile {
 		height: 95vh;
 	}
@@ -44,5 +44,5 @@
 }
 
 .aiosrs-rating-wrap {
-	@include alignwide;
+	@include align-wide;
 }

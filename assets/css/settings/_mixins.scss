@@ -43,7 +43,7 @@
 }
 
 // Wide boxed width.
-@mixin alignwide {
+@mixin align-wide {
 	margin: auto;
 	@include mobile {
 		max-width: 95%;
