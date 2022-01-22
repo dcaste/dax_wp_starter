@@ -23,7 +23,7 @@
 		</footer>
 
 		<a href="#" id="go__top" title="Go to top">
-			<i class="icon-up"></i>
+			<i class="icon-up-open"></i>
 		</a>
 
 		<?php	get_template_part( 'template-parts/secciones/header-mobile' ); ?>

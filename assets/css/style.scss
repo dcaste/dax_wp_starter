@@ -7,15 +7,13 @@
 @import "./settings/variables";
 @import "./settings/mixins";
 
-// Animations.
-
 // Global styles.
 @import "./settings/sanitize"; // CSS reset.
 @import "./settings/global";
-@import "./settings/headings";
-@import "./settings/forms";
-@import "./settings/buttons";
-@import "./settings/wordpress";
+
+// Components.
+@import "./components/forms";
+@import "./components/buttons";
 
 // Website sections.
 @import "./sections/header";
@@ -26,8 +24,18 @@
 @import "./sections/footer";
 @import "./sections/mobile";
 
+// Miscellaneous.
+@import "./miscellaneous/headings";
+@import "./miscellaneous/fonts";
+
+// WordPress.
+@import "./wordpress/global";
+@import "./wordpress/images";
+@import "./wordpress/login";
+@import "./wordpress/misc";
+
 // Blocks.
 @import "./blocks/wp-blocks";
 
-// Fonts.
-@import "./settings/fonts";
+// Animations.
+@import "./animations/font-animations";
