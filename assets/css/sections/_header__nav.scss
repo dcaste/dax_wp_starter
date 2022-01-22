@@ -37,6 +37,7 @@
 
 #header__logo {
 	transition: height $transition;
+	width: auto;
 
 	&:focus {
 		outline: none;

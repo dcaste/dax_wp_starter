@@ -1,0 +1,51 @@
+/* Forms */
+form {
+	width: 100%;
+}
+
+[type="text"],
+[type="password"],
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="month"],
+[type="week"],
+[type="email"],
+[type="number"],
+[type="search"],
+[type="tel"],
+[type="time"],
+[type="url"],
+[type="color"],
+select,
+textarea {
+	background-color: $color--grey-light;
+	color: $color--black;
+	border: 1px solid $color--grey-dark;
+	cursor: text;
+	padding: 0.75rem 1rem;
+	line-height: 1em;
+	border-radius: $global--radius;
+	width: 100%;
+	box-sizing: border-box;
+	@include fonts--body;
+	font-size: 0.9em;
+
+	&:focus {
+		outline: 0px;
+	}
+
+	&::placeholder {
+		color: $color--grey;
+		font-size: 0.9em;
+	}
+}
+
+label {
+	color: $color--grey-dark;
+	font-weight: $fonts--bold;
+}
+
+select {
+	cursor: pointer;
+}

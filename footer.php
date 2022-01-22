@@ -22,7 +22,7 @@
 
 		</footer>
 
-		<a href="#top-bar" id="go-to-top" class="boton-green" title="Ir hacia arriba">
+		<a href="#" id="go__top" title="Go to top">
 			<i class="icon-up"></i>
 		</a>
 
