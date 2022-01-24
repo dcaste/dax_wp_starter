@@ -1,11 +1,11 @@
 /* Footer Navigation menu */
 
 #footer__nav {
-	margin: 1rem auto;
+	grid-column: -1 / 1;
 
 	ul {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: repeat(4, 1fr);
 		grid-template-rows: auto;
 		list-style: none;
 		margin-block-start: 0px;
@@ -13,26 +13,12 @@
 		padding-inline-start: 0px;
 	}
 
-	li {
-		display: inline-block;
-	}
-
-	@include mobile {
-		li + li {
-			margin-left: 0.5rem;
-			font-size: 0.9em;
-		}
-	}
-
-	@include tablet-h {
-		li + li {
-			margin-left: 1rem;
-			font-size: 1em;
-		}
-	}
-
 	a {
-		padding: 0.5rem 0.2rem;
+		padding: 0.2rem;
 		display: block;
+	}
+
+	.sub-menu {
+		display: none;
 	}
 }

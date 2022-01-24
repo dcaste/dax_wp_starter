@@ -9,19 +9,8 @@
 		<footer id="footer">
 			<div id="footer__container">
 
-				<?php	get_template_part( 'template-parts/footer__logo' ); ?>
-
-				<?php if ( is_active_sidebar( 'footer__social-icons' ) ) : ?>
-					<div class="footer__top-bar__item">
-						<?php dynamic_sidebar( 'footer__social-icons' ); ?>
-					</div>
-				<?php endif; ?>
-
-				<?php if ( is_active_sidebar( 'footer__main-area' ) ) : ?>
-					<?php dynamic_sidebar( 'footer__main-area' ); ?>
-				<?php endif; ?>
-
-				<?php	get_template_part( 'template-parts/footer__nav' ); ?>
+				<?php	get_template_part( 'template-parts/footer__left-area' ); ?>
+				<?php	get_template_part( 'template-parts/footer__right-area' ); ?>
 
 				<div id="footer__copyright">
 					&copy <?php echo esc_html( date( 'Y' ) ); ?> dcaste_wp_starter.
