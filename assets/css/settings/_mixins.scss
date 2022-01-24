@@ -1,5 +1,6 @@
 /* Mixins. */
 
+// Gradient.
 @mixin gradient($angle, $color1, $color2) {
 	$angle: $angle + deg;
 	background: linear-gradient($angle, $color1 0%, $color2 100%);
@@ -59,4 +60,17 @@
 }
 @mixin fonts--headings {
 	font-family: "Roboto Condensed", Helvetica, Arial, sans-serif;
+}
+
+// Box Shadows.
+@mixin shadow-z--1 {
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+@mixin shadow-z--2 {
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+@mixin shadow-z--3 {
+	box-shadow: 0 13px 25px 0 rgb(0, 0, 0, 0.3);
 }
