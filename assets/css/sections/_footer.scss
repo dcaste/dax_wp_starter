@@ -6,6 +6,7 @@
 
 	a {
 		color: $color--main-light;
+		text-decoration: underline;
 
 		&:hover {
 			color: $color--white;
@@ -46,7 +47,7 @@
 		grid-template-rows: auto;
 	}
 
-	@include tablet-h {
+	@include tablet-v {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: auto;
 	}
