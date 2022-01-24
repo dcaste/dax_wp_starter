@@ -97,9 +97,10 @@ select{cursor:pointer}
 #header__nav a:hover{color:#333;background-color:#cde6ff}
 #header__nav ul{list-style:none;margin:0;-webkit-padding-start:0;padding-inline-start:0}
 #header__nav li{float:left}
-#header__nav .sub-menu{display:none}
+#header__nav .sub-menu{display:none;width:300px;position:absolute;background-color:#06c}
+#header__nav .sub-menu li{display:block;width:100%}
 .current-menu-item,.current-menu-parent,.current-menu-ancestor{background-color:#00478d}
-.menu-item-has-children a::after{display:inline-block;width:0;height:0;margin-left:.255em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}
+.menu-item-has-children>a::after{font-family:"dcaste_wp_starter";font-style:normal;font-weight:normal;display:inline-block;text-decoration:inherit;text-align:center;margin-left:5px;content:"\e802"}
 #main{z-index:1;background:#fff}
 .error404 #main{color:#fff;padding:6rem 0}
 .error404 #main h1{color:#fff}

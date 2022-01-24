@@ -15,7 +15,7 @@
 		<a href="tel:+01 1800-123-123">
 			<div class="header__top-bar__item"><i class="icon-phone"></i> 1800-123-123</div>
 		</a>
-		<div class="header__top-bar__item"><i class="icon-location"></i> Address example</div>
+		<address class="header__top-bar__item"><i class="icon-location"></i> Address example</address>
 		<div class="header__top-bar__item">
 			<?php get_template_part( 'template-parts/social-media' ) ?>
 		</div>

@@ -29,5 +29,11 @@ jQuery(document).ready(function ($) {
       scrollTop: 0
     }, 500);
     return false;
+  }); //Dropdown Menu
+
+  $("#header__nav ul li.menu-item-has-children > a").click(function () {
+    $(this).parent().siblings().find("ul").slideUp(300);
+    $(this).next("ul").stop(true, false, true).slideToggle(300);
+    return false;
   });
 });
