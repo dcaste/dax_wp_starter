@@ -14,13 +14,13 @@
 		}
 	}
 
-	.social-media__item {
-		display: inline-block;
-		font-size: 1.9em;
-	}
-
-	.social-media__item + .social-media__item {
-		margin-left: 0.2em;
+	.wp-block-social-links {
+		font-size: 1.5em;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		margin-inline-start: 0;
+		margin-inline-end: 0;
+		padding-inline-start: 0;
 	}
 }
 

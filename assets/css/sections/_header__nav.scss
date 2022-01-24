@@ -87,25 +87,25 @@
 			width: 100%;
 		}
 	}
-}
 
-.current-menu-item,
-.current-menu-parent,
-.current-menu-ancestor {
-	background-color: $color--main-dark;
-}
+	.current-menu-item,
+	.current-menu-parent,
+	.current-menu-ancestor {
+		background-color: $color--main-dark;
+	}
 
-.menu-item-has-children {
-	> a {
-		&::after {
-			font-family: "dcaste_wp_starter";
-			font-style: normal;
-			font-weight: normal;
-			display: inline-block;
-			text-decoration: inherit;
-			text-align: center;
-			margin-left: 5px;
-			content: "\e802";
+	.menu-item-has-children {
+		> a {
+			&::after {
+				font-family: "dcaste_wp_starter";
+				font-style: normal;
+				font-weight: normal;
+				display: inline-block;
+				text-decoration: inherit;
+				text-align: center;
+				margin-left: 5px;
+				content: "\e802";
+			}
 		}
 	}
 }

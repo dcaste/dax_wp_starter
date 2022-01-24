@@ -29,7 +29,7 @@ jQuery(document).ready(function ($) {
       scrollTop: 0
     }, 500);
     return false;
-  }); //Dropdown Menu
+  }); //Dropdown Menu in Header
 
   $("#header__nav ul li.menu-item-has-children > a").click(function () {
     $(this).parent().siblings().find("ul").slideUp(300);
