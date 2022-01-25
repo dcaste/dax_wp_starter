@@ -9,7 +9,6 @@
 
 // Global styles.
 @import "./settings/sanitize"; // CSS reset.
-@import "./settings/global";
 
 // Components.
 @import "./components/forms";
@@ -19,6 +18,7 @@
 @import "./sections/header";
 @import "./sections/header__top-bar";
 @import "./sections/header__nav";
+@import "./sections/header__search-form";
 @import "./sections/homepage";
 @import "./sections/pages";
 @import "./sections/footer";
@@ -26,6 +26,7 @@
 @import "./sections/mobile";
 
 // Miscellaneous.
+@import "./miscellaneous/global";
 @import "./miscellaneous/headings";
 @import "./miscellaneous/fonts";
 

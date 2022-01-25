@@ -53,6 +53,8 @@
 }
 
 #header__nav {
+	display: flex;
+
 	a {
 		display: block;
 		color: $color--main-light;

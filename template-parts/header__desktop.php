@@ -18,5 +18,8 @@
 			<?php get_template_part( 'template-parts/header__nav' ); ?>
 
 		</div>
+
+		<?php get_search_form(); ?>
+
 	</header>
 </div>

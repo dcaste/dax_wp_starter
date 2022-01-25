@@ -3,15 +3,14 @@
 [type="reset"],
 [type="submit"] {
 	margin: 0px;
-	overflow: hidden !important;
+	overflow: hidden;
 	border: none;
 	border-radius: $global--radius;
-	padding: 0.75rem 1.5rem !important;
-	font-size: 0.9em !important;
-	font-weight: $fonts--regular !important;
+	padding: 0.75rem 1.5rem;
+	font-size: 0.9em;
+	font-weight: $fonts--regular;
 	cursor: pointer;
 	line-height: 1;
-	min-width: 100px;
 	box-sizing: border-box;
 	text-align: center;
 
@@ -58,6 +57,17 @@
 
 .wp-core-ui .button-primary {
 	@extend .button-main;
+}
+
+#header__button-search {
+	@extend .button-main;
+	padding: 0.5rem;
+	margin-left: 1rem;
+	background-color: transparent !important;
+
+	&:hover {
+		background-color: transparent !important;
+	}
 }
 
 #go__top {

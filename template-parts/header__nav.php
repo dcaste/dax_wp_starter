@@ -30,4 +30,7 @@
 	);
 	wp_nav_menu( $menu_defaults );
 	?>
+	<button id="header__button-search">
+		<i class="icon-search"></i>
+	</button>
 </nav>

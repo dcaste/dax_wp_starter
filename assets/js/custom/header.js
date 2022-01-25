@@ -29,10 +29,17 @@ jQuery(document).ready(function ($) {
 		return false;
 	});
 
-	//Dropdown Menu in Header
+	// Dropdown Menu in Header
 	$("#header__nav ul li.menu-item-has-children > a").click(function () {
 		$(this).parent().siblings().find("ul").slideUp(300);
 		$(this).next("ul").stop(true, false, true).slideToggle(300);
+		return false;
+	});
+
+	// Show/hides Header search form.
+	$("#header__button-search").click(function () {
+		$("#header__search-form").slideUp(300);
+		$("#header__search-form").stop(true, false, true).slideToggle(300);
 		return false;
 	});
 });

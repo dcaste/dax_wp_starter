@@ -1,0 +1,24 @@
+#header__search-form {
+	display: none;
+	@include align-wide;
+
+	.search-form {
+		margin-top: 1rem;
+		display: flex;
+	}
+
+	.search-field {
+		border: none;
+		border-top-left-radius: $global--radius;
+		border-bottom-left-radius: $global--radius;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.search-submit {
+		background-color: $color--grey-light;
+		border: none;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}
