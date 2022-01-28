@@ -78,9 +78,6 @@ select{cursor:pointer}
 #go__top:hover{-webkit-box-shadow:0 6px 10px 0 rgba(0,0,0,0.3);box-shadow:0 6px 10px 0 rgba(0,0,0,0.3)}
 #header__desktop{z-index:99}
 #header__top-bar{padding:5px 0;background:#cde6ff;font-family:"Roboto",Helvetica,Arial,sans-serif;color:#333;font-size:.85em}
-#header__top-bar a{color:#06c}
-#header__top-bar a:hover{color:#099}
-#header__top-bar .wp-block-social-links{font-size:1.5em;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}
 #header__top-bar__container{margin:auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;-webkit-box-align:center;-ms-flex-align:center;align-items:center;gap:5rem}
 #header__nav__wrapper{z-index:99;padding:20px 0;background:#06c;-webkit-transition:padding .3s ease;transition:padding .3s ease}
 #header__nav__container{margin:auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
@@ -101,9 +98,6 @@ select{cursor:pointer}
 #header__search-form .search-form{margin-top:1rem;display:-webkit-box;display:-ms-flexbox;display:flex}
 #header__search-form .search-field{border:0;border-top-left-radius:4px;border-bottom-left-radius:4px;border-top-right-radius:0;border-bottom-right-radius:0}
 #header__search-form .search-submit{background-color:#eff4ff;border:0;border-top-left-radius:0;border-bottom-left-radius:0}
-#main{z-index:1;background:#fff}
-.error404 #main{color:#fff;padding:6rem 0}
-.error404 #main h1{color:#fff}
 #footer{z-index:99;background:#06c;color:#cde6ff;padding:2rem 0}
 #footer a{color:#cde6ff;text-decoration:underline}
 #footer a:hover{color:#fff}
@@ -210,13 +204,15 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 .screen-reader-text{display:none}
 .nav-previous{float:left}
 .nav-next{float:right}
+#main{z-index:1;background:#fff}
+.error404 #main{color:#fff;padding:6rem 0}
+.error404 #main h1{color:#fff}
 .wp-block-media-text__media{padding:1rem}
 .wp-block-media-text__media img{-webkit-box-shadow:#06c 10px 10px 0;box-shadow:#06c 10px 10px 0}
 .wp-block-embed-youtube{background:#cde6ff;padding:3rem 0;margin:0}
 .wp-block-embed__wrapper{margin:auto}
 .wp-block-embed__wrapper iframe{width:100%;height:100%}
-.aiosrs-rating-wrap{margin:auto}
-.wp-block-social-link a{color:#fff !important}
+.wp-block-social-links{font-size:1.5em;-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}
 .animate-spin{-webkit-animation:spin 2s infinite linear;animation:spin 2s infinite linear;display:inline-block}
 @media screen and (-webkit-min-device-pixel-ratio:0){@font-face{font-family:"dcaste_wp_starter";src:url("./assets/fonts/dcaste_wp_starter.svg?10846544#dcaste_wp_starter") format("svg")}
 }@media only screen and (min-width:320px){#header__top-bar__container{max-width:95%}
@@ -235,7 +231,6 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 .wp-block-media-text{grid-template-columns:1fr;grid-template-areas:"media-text-media" "media-text-content"}
 .wp-block-embed__wrapper{max-width:95%}
 .wp-block-embed__wrapper{height:95vh}
-.aiosrs-rating-wrap{max-width:95%}
 }@media only screen and (min-width:768px){#footer__right-area{grid-template-columns:1fr 1fr;grid-template-rows:auto}
 #footer__nav ul{grid-template-columns:repeat(2,1fr)}
 .wp-block-embed__wrapper{height:60vh}
@@ -256,7 +251,6 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 #footer__container{max-width:1400px}
 .align-wide{max-width:1400px}
 .wp-block-embed__wrapper{max-width:1400px}
-.aiosrs-rating-wrap{max-width:1400px}
 }@-webkit-keyframes spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}
 100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}
 }@keyframes spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}

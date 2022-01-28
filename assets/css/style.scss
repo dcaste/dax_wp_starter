@@ -19,8 +19,6 @@
 @import "./sections/header__top-bar";
 @import "./sections/header__nav";
 @import "./sections/header__search-form";
-@import "./sections/homepage";
-@import "./sections/pages";
 @import "./sections/footer";
 @import "./sections/footer__nav";
 @import "./sections/mobile";
@@ -35,6 +33,10 @@
 @import "./wordpress/images";
 @import "./wordpress/login";
 @import "./wordpress/misc";
+
+// Pages.
+@import "./pages/homepage";
+@import "./pages/pages";
 
 // Blocks.
 @import "./blocks/wp-blocks";
