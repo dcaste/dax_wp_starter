@@ -12,7 +12,8 @@
 
 <?php get_template_part( 'template-parts/head' ); ?>
 
-<body>
+<body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
 	<?php
 		get_template_part( 'template-parts/header__desktop' );
 		get_template_part( 'template-parts/nav__mobile' );

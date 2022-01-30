@@ -7,8 +7,11 @@ table {
 	}
 }
 
-th {
+th,
+thead {
 	background-color: $color--grey;
+	color: $color--black;
+	font-weight: $fonts--bold;
 }
 
 td,

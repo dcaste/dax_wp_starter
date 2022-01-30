@@ -1,0 +1,11 @@
+/* Pagination styles */
+.pagination {
+	.nav-links {
+		display: flex;
+		gap: 0.25rem;
+	}
+
+	.page-numbers {
+		padding: 0.5rem;
+	}
+}
