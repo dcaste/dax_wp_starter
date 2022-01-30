@@ -208,6 +208,12 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 #main{z-index:1;background:#fff;margin:auto}
 .error404 #main{color:#fff;padding:6rem 0}
 .error404 #main h1{color:#fff}
+#blog__container{display:grid}
+#blog__sidebar{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:1rem}
+#blog__sidebar .widget{padding:1rem;background-color:#eff4ff}
+.post-navigation .nav-links{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
+.post-navigation .nav-previous::before{font-family:"dcaste_wp_starter";display:inline-block;margin-right:.5rem;content:"\e803"}
+.post-navigation .nav-next::after{font-family:"dcaste_wp_starter";display:inline-block;margin-left:.5rem;content:"\e804"}
 .wp-block-media-text__media{padding:1rem}
 .wp-block-media-text__media img{-webkit-box-shadow:#06c 10px 10px 0;box-shadow:#06c 10px 10px 0}
 .wp-block-embed-youtube{background:#cde6ff;padding:3rem 0;margin:0}
@@ -258,6 +264,8 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 .align-wide{max-width:95%}
 .login{width:90%}
 #main{max-width:95%}
+#blog__container{grid-template-columns:1fr;gap:1rem;margin:1rem 0}
+.post-navigation .nav-links{margin:1rem 0}
 .wp-block-media-text__media{margin-bottom:1rem}
 .wp-block-media-text{grid-template-columns:1fr;grid-template-areas:"media-text-media" "media-text-content"}
 .wp-block-embed__wrapper{max-width:95%}
@@ -277,6 +285,8 @@ img.aligncenter{float:none;margin:1.5rem auto;display:block}
 #nav-mobile{display:none}
 #mobile-menu{display:none}
 .login{width:500px}
+#blog__container{grid-template-columns:3fr 1fr;gap:3rem;margin:3rem 0}
+.post-navigation .nav-links{margin:3rem 0}
 .wp-block-media-text{grid-template-columns:1fr 1fr;grid-template-areas:"media-text-media media-text-content"}
 .wp-block-group:where(.has-background){padding:3rem 0}
 }@media only screen and (min-width:1440px){#header__top-bar__container{max-width:1400px}

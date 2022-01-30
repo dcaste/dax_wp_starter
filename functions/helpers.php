@@ -7,7 +7,7 @@
 
 // Text to show in Dashboard footer.
  function custom_admin_footer() {
- 	echo 'Desarrollado por Dax Castellón Meyrat';
+ 	echo ('Developed by Dax Castellón Meyrat - daxcastellon.dev');
  }
  add_filter( 'admin_footer_text', 'custom_admin_footer' );
 

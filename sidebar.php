@@ -5,11 +5,12 @@
  * @package dcaste_wp_starter
  */
 
-if ( ! is_active_sidebar( 'sidebar_blog' ) ) {
+if ( ! is_active_sidebar( 'primary' ) || ! is_active_sidebar( 'secondary' )) {
 	return;
 }
 ?>
 
-<aside class="sidebar-blog">
-	<?php dynamic_sidebar( 'sidebar_blog' ); ?>
+<aside id="blog__sidebar">
+	<?php dynamic_sidebar( 'primary' ); ?>
+	<?php dynamic_sidebar( 'secondary' ); ?>
 </aside>

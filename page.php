@@ -1,6 +1,6 @@
 <?php
 /**
- * Página por defecto.
+ * Default page.
  *
  * @package dcaste_wp_starter
  */
@@ -13,6 +13,9 @@ if ( have_posts() ) :
 ?>
 
 <main id="main">
+	<header class="entry-header">
+		<?php the_title( '<h1>', '</h1>' ); ?>
+	</header>
 	<?php the_content(); ?>
 </main>
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Página de archivos.
+ * Archive page.
  *
  * @package dcaste_wp_starter
  */

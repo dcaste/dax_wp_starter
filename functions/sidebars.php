@@ -14,7 +14,7 @@ function dcaste_wp_starter_sidebars() {
 		register_sidebar(
 			array(
 				'id'            => 'primary',
-				'name'          => 'Primary Sidebar',
+				'name'          => 'Primary Blog Sidebar',
 				'description'   => 'A short description of the sidebar.',
 				'before_widget' => '<div id="%1$s" class="widget %2$s">',
 				'after_widget'  => '</div>',
@@ -26,7 +26,7 @@ function dcaste_wp_starter_sidebars() {
 		register_sidebar(
 			array(
 					'id'            => 'secondary',
-					'name'          => 'Secondary Sidebar',
+					'name'          => 'Secondary Blog Sidebar',
 					'description'   => 'A short description of the sidebar.',
 					'before_widget' => '<div id="%1$s" class="widget %2$s">',
 					'after_widget'  => '</div>',

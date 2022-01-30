@@ -1,0 +1,60 @@
+/* Single post styles */
+#blog__container {
+	display: grid;
+
+	@include mobile {
+		grid-template-columns: 1fr;
+		gap: 1rem;
+		margin: 1rem 0;
+	}
+
+	@include tablet-h {
+		grid-template-columns: 3fr 1fr;
+		gap: 3rem;
+		margin: 3rem 0;
+	}
+}
+
+#blog__sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+
+	.widget {
+		padding: 1rem;
+		background-color: $color--grey-light;
+	}
+}
+
+.post-navigation {
+	.nav-links {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		@include mobile {
+			margin: 1rem 0;
+		}
+		@include tablet-h {
+			margin: 3rem 0;
+		}
+	}
+
+	.nav-previous {
+		&::before {
+			font-family: "dcaste_wp_starter";
+			display: inline-block;
+			margin-right: 0.5rem;
+			content: "\e803";
+		}
+	}
+
+	.nav-next {
+		&::after {
+			font-family: "dcaste_wp_starter";
+			display: inline-block;
+			margin-left: 0.5rem;
+			content: "\e804";
+		}
+	}
+}

@@ -1,6 +1,6 @@
 <?php
 /**
- * Error 404. Página no encontrada.
+ * Error 404. PAge not Found.
  *
  * @package dcaste_wp_starter
  */
@@ -9,12 +9,9 @@ get_header();
 ?>
 
 <main id="main">
-	<div class="alignwide">
-		<h1>Página no encontrada</h1>
-		<p>Lo sentimos, la página que usted busca no se encuentra.</p>
-		<p>Posiblemente esa página ya no existe en nuestro sitio o la dirección está mal escrita.</p>
-		<p>Utilice el menú de navegación para encontrar la información que desea.</p>
-	</div>
+	<h1>404 - PAge not found</h1>
+	<p>We are sorry. The page you are looking for does not exists.</p>
+	<p>Please use the website main menu to find the page you are looking for.</p>
 </main>
 
 <?php

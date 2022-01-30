@@ -1,6 +1,6 @@
 <?php
 /**
- * Entrada single de posts.
+ * Single post.
  *
  * @package dcaste_wp_starter
  */
@@ -10,58 +10,50 @@ get_header();
 
 	<main id="main">
 
-	<?php
-	while ( have_posts() ) :
-		the_post();
-	?>
+		<?php
+		while ( have_posts() ) :
+			the_post();
+		?>
 
-		<header class="entry-header">
-			<?php the_title( '<h1>', '</h1>' ); ?>
-		</header>
+			<div id="blog__container">
 
-		<div id="blog-container" class="alignwide">
+				<article id="blog__content">
 
-					<!-- Inicia columna izquierda de contenido. -->
-					<div>
-						<article class="articulo">
+					<header id="article__header">
 
-							<?php if ( has_post_thumbnail() ) : ?>
-								<?php the_post_thumbnail(); ?>
-							<?php endif; ?>
+						<?php the_title( '<h1>', '</h1>' ); ?>
 
-							<header>
-								<p class="articulo-meta">
-									<?php
-									the_date();
-									if ( has_tag() ) {
-										echo ' | ';
-										the_tags();
-									}
-									?>
-								</p>
-							</header>
+						<p id="article__meta">
+							<?php
+							the_date();
+							if ( has_tag() ) {
+								echo ' | ';
+								the_tags();
+							}
+							?>
+						</p>
 
-							<?php the_content(); ?>
+					</header>
 
-							<?php the_post_navigation(); ?>
+					<?php if ( has_post_thumbnail() ) : ?>
+						<?php the_post_thumbnail(); ?>
+					<?php endif; ?>
 
-						</article>
-					</div>
-					<!-- Finaliza columna izquierda de contenido. -->
+					<?php the_content(); ?>
 
-					<!-- Inicia sidebar. -->
-					<div>
-						<?php get_sidebar(); ?>
-					</div>
-					<!-- Finaliza sidebar. -->
+					<?php the_post_navigation(); ?>
 
-		</div><!-- Blog container. -->
+				</article>
 
-	<?php
-	endwhile; // End of the loop.
-	?>
+				<?php get_sidebar(); ?>
 
-	</main><!-- #main -->
+			</div>
+
+		<?php
+		endwhile; // End of the loop.
+		?>
+
+	</main>
 
 <?php
 get_footer();
