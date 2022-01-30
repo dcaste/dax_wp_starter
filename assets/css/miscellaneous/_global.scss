@@ -37,3 +37,7 @@ p + p {
 .align-wide {
 	@include align-wide;
 }
+
+.alignfull {
+	@include align-full;
+}

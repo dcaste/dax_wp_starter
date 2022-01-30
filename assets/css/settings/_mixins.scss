@@ -43,7 +43,7 @@
 	}
 }
 
-// Wide boxed width.
+// Full and Wide boxed width.
 @mixin align-wide {
 	margin: auto;
 	@include mobile {
@@ -52,6 +52,12 @@
 	@include laptop-h {
 		max-width: 1400px;
 	}
+}
+
+@mixin align-full {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(50% - 50vw);
 }
 
 // Fonts.

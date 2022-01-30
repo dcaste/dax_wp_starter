@@ -2,6 +2,7 @@
 #main {
 	z-index: 1;
 	background: $color--white;
+	@include align-wide;
 }
 
 .error404 {

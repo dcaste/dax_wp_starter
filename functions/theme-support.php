@@ -39,13 +39,8 @@ if ( ! function_exists( 'dcaste_wp_starter_theme_support' ) ) :
 					'color' => '#FFF',
 				),
 				array(
-					'name'  => 'Light Blue',
-					'slug'  => 'blue-light',
-					'color' => '#e9f4ff',
-				),
-				array(
-					'name'  => 'Light Gray',
-					'slug'  => 'gray-light',
+					'name'  => 'Grey Light',
+					'slug'  => 'grey-light',
 					'color' => '#eff4ff',
 				),
 				array(
@@ -54,7 +49,7 @@ if ( ! function_exists( 'dcaste_wp_starter_theme_support' ) ) :
 					'color' => '#999',
 				),
 				array(
-					'name'  => 'Dark Grey',
+					'name'  => 'Grey Dark',
 					'slug'  => 'grey-dark',
 					'color' => '#333',
 				),
@@ -64,14 +59,49 @@ if ( ! function_exists( 'dcaste_wp_starter_theme_support' ) ) :
 					'color' => '#000',
 				),
 				array(
-					'name'  => 'Blue',
-					'slug'  => 'blue',
+					'name'  => 'Main Light',
+					'slug'  => 'main-light',
+					'color' => '#cde6ff',
+				),
+				array(
+					'name'  => 'Main',
+					'slug'  => 'main',
 					'color' => '#0066cc',
 				),
 				array(
-					'name'  => 'Green',
-					'slug'  => 'green',
+					'name'  => 'Main Dark',
+					'slug'  => 'main-dark',
+					'color' => '#00478d',
+				),
+				array(
+					'name'  => 'Secondary Light',
+					'slug'  => 'secondary-light',
+					'color' => '#75e9e9',
+				),
+				array(
+					'name'  => 'Secondary',
+					'slug'  => 'secondary',
 					'color' => '#009999',
+				),
+				array(
+					'name'  => 'Secondary Dark',
+					'slug'  => 'secondary-dark',
+					'color' => '#006666',
+				),
+				array(
+					'name'  => 'Terciary Light',
+					'slug'  => 'terciary-light',
+					'color' => '#e97575',
+				),
+				array(
+					'name'  => 'Terciary',
+					'slug'  => 'terciary',
+					'color' => '#990000',
+				),
+				array(
+					'name'  => 'Terciary Dark',
+					'slug'  => 'terciary-dark',
+					'color' => '#5e0101',
 				),
 			)
 		);
