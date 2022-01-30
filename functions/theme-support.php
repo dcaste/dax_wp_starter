@@ -46,7 +46,7 @@ if ( ! function_exists( 'dcaste_wp_starter_theme_support' ) ) :
 				array(
 					'name'  => 'Grey',
 					'slug'  => 'grey',
-					'color' => '#999',
+					'color' => '#c3c3c3',
 				),
 				array(
 					'name'  => 'Grey Dark',

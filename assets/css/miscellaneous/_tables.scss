@@ -1,0 +1,22 @@
+/* Tables styles */
+table {
+	&.cebra {
+		tr:nth-child(even) {
+			background-color: $color--grey-light;
+		}
+	}
+}
+
+th {
+	background-color: $color--grey;
+}
+
+td,
+th {
+	border: 1px solid $color--grey;
+}
+
+td,
+th {
+	padding: 1rem;
+}
