@@ -4,6 +4,10 @@ body {
 	font-size: 16px;
 	color: $color--grey-dark;
 	background-color: $color--white;
+
+	// Fix for the horizontal scrol bar when using full width elements.
+	overflow-x: hidden;
+	overflow-y: visible;
 }
 
 strong {
