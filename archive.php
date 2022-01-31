@@ -39,7 +39,7 @@ get_header();
 	<?php
 	// If there are no posts.
 	else :
-		get_template_part( 'template-parts/content', 'none' );
+		get_template_part( 'template-parts/content__none' );
 	endif;
 	?>
 

@@ -40,9 +40,12 @@ get_header();
 			</div>
 
 		<?php
-		// If there are no posts.
-		else :
-			get_template_part( 'template-parts/content', 'none' );
+		// If there are no search results.
+		else : ?>
+			<h1>Not search results found</h1>
+			<p>We are sorry but could not find the content you are looking for.</p>
+			<p>Please use the website main menu to find the information you are looking for or search for another term.</p>
+		<?php
 		endif;
 		?>
 
