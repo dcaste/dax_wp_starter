@@ -5,7 +5,11 @@ A clean, basic and minimum style to be used as a template for develop a custom W
 ## How to use this theme
 
 1. Download, clone or Use this template in your WordPress theme folder.
-2. Install npm dependencies by using code(npm install)
+2. Install npm dependencies by using `npm install`
 3. Edit your project variables found in dax_wp_starter.js
-4. Start your development with code(npm run start)
-5. Generate a finished theme ZIP to be used in production with code(nom run zip)
+4. Start your development with `npm run start`
+5. Generate a finished theme ZIP to be used in production with `npm run zip`
+
+### Acknowledgment
+
+This theme is based in the WordPress Gulp Workflow [WPGulp](https://github.com/ahmadawais/WPGulp) by Ahmad Awais
