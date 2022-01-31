@@ -1,6 +1,6 @@
 <?php
 /**
- * Error 404. PAge not Found.
+ * Error 404. Page not Found.
  *
  * @package dcaste_wp_starter
  */

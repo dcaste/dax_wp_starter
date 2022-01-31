@@ -1,6 +1,6 @@
 <?php
 /**
- * Header
+ * Website main header
  *
  * @package dcaste_wp_starter
  */

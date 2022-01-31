@@ -7,8 +7,10 @@
 
 ?>
 
-<?php if ( is_front_page() && is_home() ) {?><h1><?php } ?>
-	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+	<?php if ( is_home() || is_front_page() ) {?><h1><?php } ?>
+
 		<img id="header__logo" src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/logo.png' ); ?>" alt="<?php bloginfo( 'name' ); ?>">
-	</a>
-<?php if ( is_front_page() && is_home() ) {?></h1><?php } ?>
+
+	<?php if ( is_home() || is_front_page() ) {?></h1><?php } ?>
+</a>

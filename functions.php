@@ -1,6 +1,6 @@
 <?php
 /**
- * Funciones y definiciones del theme.
+ * Theme functions.
  *
  * @package dcaste_wp_starter
  */

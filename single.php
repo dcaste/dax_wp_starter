@@ -50,7 +50,7 @@ get_header();
 			</div>
 
 		<?php
-		endwhile; // End of the loop.
+		endwhile; // Ends while there are posts.
 		?>
 
 	</main>

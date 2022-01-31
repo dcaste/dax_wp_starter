@@ -1,6 +1,7 @@
 <?php
 /**
  * Posts loop.
+ * Loop used in Archive and Search results pages.
  *
  * @package dcaste_wp_starter
  */

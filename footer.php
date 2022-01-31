@@ -1,6 +1,6 @@
 <?php
 /**
- * Footer principal.
+ * Website Footer.
  *
  * @package dcaste_wp_starter
  */
@@ -22,8 +22,6 @@
 		<a href="#" id="go__top" title="Go to top">
 			<i class="icon-up-open"></i>
 		</a>
-
-		<?php	get_template_part( 'template-parts/nav__mobile' ); ?>
 
 		<?php wp_footer(); ?>
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * Sidebar de wisdgets.
+ * Sidebar de widgets.
  *
  * @package dcaste_wp_starter
  */
