@@ -25,6 +25,9 @@ if ( ! function_exists( 'dcaste_wp_starter_theme_support' ) ) :
 			'caption',
 		) );
 
+		// Removes support for Block Templates and Patterns.
+		remove_theme_support( 'block-templates' );
+
 		// Support for Gutenberg styles.
 		add_theme_support( 'wp-block-styles' );
 		add_theme_support( 'align-wide' );
