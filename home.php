@@ -1,0 +1,44 @@
+<?php
+/**
+ * Home. Collection of blog posts.
+ *
+ * @package dcaste_wp_starter
+ */
+
+get_header();
+?>
+
+<main id="main">
+
+	<?php
+	if ( have_posts() ) :
+	?>
+
+	<div id="archive__container">
+		<?php
+		while ( have_posts() ) :
+			the_post();
+		?>
+
+			<article class="archive__article">
+				<?php get_template_part( 'template-parts/posts__loop' ); ?>
+			</article>
+
+		<?php
+			endwhile; // End While there are posts.
+			the_posts_pagination();
+		?>
+
+	</div>
+
+	<?php
+	// If there are no posts.
+	else :
+		get_template_part( 'template-parts/content__none' );
+	endif;
+	?>
+
+</main>
+
+<?php
+get_footer();
