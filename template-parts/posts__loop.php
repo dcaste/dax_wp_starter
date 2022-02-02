@@ -23,13 +23,26 @@
 	</h2>
 
 	<p class="article__meta">
+
+		<span class="article__meta__date"><?php the_date(); ?></span>
+
 		<?php
-		the_date();
-		if ( has_tag() ) {
-			echo ' | ';
-			the_tags();
-		}
-		?>
+		if ( has_category() ) { ?>
+			</br>
+			<span class="article__meta__categories">
+				Categories:
+				<?php the_category(', '); ?>
+			</span>
+		<?php }	?>
+
+		<?php
+		if ( has_tag() ) { ?>
+			</br>
+			<span class="article__meta__tags">
+				<?php the_tags('Tags: ', ', '); ?>
+			</span>
+		<?php }	?>
+
 	</p>
 
 </header>
