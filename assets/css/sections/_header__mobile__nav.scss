@@ -1,0 +1,74 @@
+/* Header Mobile Navigation */
+
+#header__mobile__nav {
+	background: $color--secondary;
+	padding: 1.5rem;
+	font-size: 1em;
+	z-index: 999;
+	display: none;
+
+	#header__search-form {
+		display: block;
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+		margin-top: 1rem;
+
+		.search-form {
+			margin-top: 0;
+		}
+
+		.search-field {
+			border: none;
+			border-top-left-radius: $global--radius;
+			border-bottom-left-radius: $global--radius;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		.search-submit {
+			background-color: $color--grey-light;
+			border: none;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+
+	#header__social-icons {
+		margin-top: 1rem;
+
+		.wp-block-social-links {
+			justify-content: center;
+		}
+	}
+}
+
+#menu-mobile {
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	a {
+		color: $color--white;
+		font-size: 1em;
+		display: block;
+		padding: 0.5rem;
+
+		&:hover,
+		&:active {
+			background-color: $color--secondary-dark;
+		}
+	}
+
+	.sub-menu {
+		padding-left: 1.5rem;
+	}
+
+	.current-menu-item {
+		background-color: $color--main-dark;
+	}
+}

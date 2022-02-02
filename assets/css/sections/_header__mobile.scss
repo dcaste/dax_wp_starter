@@ -1,0 +1,33 @@
+/* Header mobile */
+
+#header__mobile {
+	padding: 10px 0;
+	flex-direction: row;
+	position: relative;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+	background: $color--main;
+	@include shadow-z--1;
+
+	@include mobile {
+		display: flex;
+	}
+	@include tablet-h {
+		display: none;
+	}
+
+	h1 {
+		line-height: 0;
+	}
+
+	#header__logo {
+		height: 45px;
+		margin-left: 1rem;
+	}
+}
+
+#mobile-toggle {
+	padding: 0.75rem;
+	margin-right: 1rem;
+}

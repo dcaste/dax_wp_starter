@@ -16,4 +16,4 @@
 <?php wp_body_open(); ?>
 	<?php
 		get_template_part( 'template-parts/header__desktop' );
-		get_template_part( 'template-parts/nav__mobile' );
+		get_template_part( 'template-parts/header__mobile' );

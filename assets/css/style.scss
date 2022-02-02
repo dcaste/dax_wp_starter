@@ -17,13 +17,13 @@
 @import "./components/tables";
 
 // Website sections.
-@import "./sections/header";
 @import "./sections/header__top-bar";
 @import "./sections/header__nav";
 @import "./sections/header__search-form";
+@import "./sections/header__mobile";
+@import "./sections/header__mobile__nav";
 @import "./sections/footer";
 @import "./sections/footer__nav";
-@import "./sections/mobile";
 
 // Miscellaneous.
 @import "./miscellaneous/global";

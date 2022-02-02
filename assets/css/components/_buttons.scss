@@ -23,16 +23,6 @@
 	}
 }
 
-.button-white {
-	@extend .button;
-	color: $color--grey-dark !important;
-	background: $color--white !important;
-
-	&:hover {
-		background: $color--grey !important;
-	}
-}
-
 .button-main {
 	@extend .button;
 	color: $color--white;
@@ -52,6 +42,16 @@
 	&:hover {
 		color: $color--white;
 		background: lighten($color--secondary, 10) !important;
+	}
+}
+
+.button-white {
+	@extend .button;
+	color: $color--grey-dark !important;
+	background: $color--white !important;
+
+	&:hover {
+		background: $color--grey !important;
 	}
 }
 

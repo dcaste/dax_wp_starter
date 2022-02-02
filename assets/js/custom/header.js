@@ -22,14 +22,14 @@ jQuery(document).ready(function ($) {
 
 	// Sticky menus.
 	$("#header__desktop").stick_in_parent();
-	$("#header__nav-mobile").stick_in_parent();
+	$("#header__mobile").stick_in_parent();
 
 	$("#go__top").click(function () {
 		$("html, body").animate({ scrollTop: 0 }, 500);
 		return false;
 	});
 
-	// Dropdown Menu in Header
+	// Dropdown Menu in Header.
 	$("#header__nav ul li.menu-item-has-children > a").click(function () {
 		$(this).parent().siblings().find("ul").slideUp(150);
 		$(this).next("ul").stop(true, false, true).slideToggle(150);
@@ -40,6 +40,13 @@ jQuery(document).ready(function ($) {
 	$("#header__button-search").click(function () {
 		$("#header__search-form").slideUp(150);
 		$("#header__search-form").stop(true, false, true).slideToggle(150);
+		return false;
+	});
+
+	// Dropdown Menu in Mobile.
+	$("#mobile-toggle").click(function () {
+		$("#header__mobile__nav").slideUp(150);
+		$("#header__mobile__nav").stop(true, false, true).slideToggle(150);
 		return false;
 	});
 });

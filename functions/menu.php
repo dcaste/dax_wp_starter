@@ -14,6 +14,7 @@ if ( ! function_exists( 'dcaste_wp_starter_menus' ) ) :
 		$locations = array(
 			'main'   => 'Main Menu',
 			'footer' => 'Footer Menu',
+			'mobile' => 'Mobile Menu',
 		);
 		register_nav_menus( $locations );
 	}

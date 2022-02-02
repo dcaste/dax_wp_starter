@@ -47,7 +47,7 @@
 @mixin align-wide {
 	margin: auto;
 	@include mobile {
-		max-width: 95%;
+		max-width: 90%;
 	}
 	@include laptop-h {
 		max-width: 1400px;
