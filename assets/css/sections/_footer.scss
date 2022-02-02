@@ -17,6 +17,7 @@
 #footer__container {
 	display: grid;
 	@include align-wide;
+	gap: 1rem;
 
 	@include mobile {
 		grid-template-areas: "left-area" "right-area" "copyright";
@@ -26,7 +27,6 @@
 	@include tablet-h {
 		grid-template-areas: "left-area right-area" "copyright copyright";
 		grid-template-columns: 1fr 3fr;
-		gap: 1rem;
 	}
 }
 

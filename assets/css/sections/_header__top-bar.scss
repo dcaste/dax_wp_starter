@@ -5,6 +5,14 @@
 	@include fonts--body;
 	color: $color--grey-dark;
 	font-size: 0.85em;
+
+	@include mobile {
+		display: none;
+	}
+
+	@include tablet-h {
+		display: block;
+	}
 }
 
 #header__top-bar__container {

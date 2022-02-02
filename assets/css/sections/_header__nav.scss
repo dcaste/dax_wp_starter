@@ -1,6 +1,11 @@
 /** NAV DESKTOP **/
-#header__nav__wrapper {
+#header__desktop {
+	@include shadow-z--1;
+	position: relative;
 	z-index: 99;
+}
+
+#header__nav__wrapper {
 	padding: 20px 0px;
 	background: $color--main;
 	transition: padding $transition;
@@ -84,6 +89,7 @@
 		width: 300px;
 		position: absolute;
 		background-color: $color--main;
+		@include shadow-z--1;
 
 		li {
 			display: block;

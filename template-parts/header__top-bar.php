@@ -7,7 +7,7 @@
 
 ?>
 
-<header id="header__top-bar">
+<div id="header__top-bar">
 	<div id="header__top-bar__container">
 		<a href="mailto:my@email.com">
 			<div class="header__top-bar__item"><i class="icon-mail-alt"></i> my@email.com</div>
@@ -22,4 +22,4 @@
 			</div>
 		<?php endif; ?>
 	</div>
-</header>
+</div>
